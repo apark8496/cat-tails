@@ -15,7 +15,7 @@ function Header() {
                 <nav>
                     <Link to="/">
                         <img className="logo"
-                            src="https://see.fontimg.com/api/renderfont4/1G8Y2/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/Q2F0IFRhaWxzOiBUZXh0IEFkdmVudHVyZQ/hellosty-blast.png"
+                            src="https://see.fontimg.com/api/renderfont4/d9xpV/eyJyIjoiZnMiLCJoIjoyOSwidyI6MTAwMCwiZnMiOjI5LCJmZ2MiOiIjQzlBRUREIiwiYmdjIjoiIzlBNzlCMiIsInQiOjF9/Q2F0IFRhaWxzOiBUZXh0IEFkdmVudHVyZQ/simplecat.png"
                             alt="catTails-logo"
                         />
                     </Link>

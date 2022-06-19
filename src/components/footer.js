@@ -7,7 +7,7 @@ function Footer() {
 		<footer className='footer'>
 			<div>
 			<Icon links={LINKS}></Icon>
-			<p> © 2022 Ashley Park, Connie Barrantes, Melany Pietrowsk, Trevor Long</p>
+			<p> © 2022 Ashley Park, Christiana Morales</p>
 			</div>
 		</footer>
 	);
