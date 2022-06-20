@@ -23,6 +23,7 @@ function Header() {
                         <Link to="/">Home</Link>
                         <Link to="/game">Game</Link>
 
+                        {/* user must sign in inorder to play game */}
                         {Auth.loggedIn() ? (
                             <>
                                 <Link to="/game"></Link>
