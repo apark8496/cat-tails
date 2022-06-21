@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Character() {
+function Characters() {
 
-    const {character} = useState([
+    const { characters } = useState([
         {
             pet: "Momo",
             imagePath: "Momo",
@@ -42,29 +42,30 @@ function Character() {
             type: "Male Lizard",
             toy: ""
         }
-    
+
     ])
 
     return (
-    <div>
-        <h2>Character Selection</h2>
-        {character}.map((Game)) => (
+        <div>
+            <h2>characters Selection</h2>
+            {characters.map((character) => (
             <Row className="cards">
-                    <Col>
-                        <Card className="card" style={{ width: '30rem' }} key={character.pet}>
-                            <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/pet-illustrations/${character.imagePath}.png`)} alt={project.pet} />
-                            <Card.Body className="card-info">
-                                <Card.Title className="text-title">{character.pet}</Card.Title>
-                                <Card.Text className="card-description">{character.type}</Card.Text>
-                                <Card.Text className="card-description">{character.toy}</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <div className="startBtn">
+                <Col>
+                    <Card className="card" style={{ width: '30rem' }} key={character.pet}>
+                        <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/pet-illustrations/${character.imagePath}.png`)} alt={character.pet} />
+                        <Card.Body className="card-info">
+                            <Card.Title className="text-title">{character.pet}</Card.Title>
+                            <Card.Text className="card-description">{character.type}</Card.Text>
+                            <Card.Text className="card-description">{character.toy}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            <div className="startBtn">
                 <button>Start Adventure</button>
-                </div>
+            </div>
+            ))}
         </div>
-)
-        };
-        export default Character;
+    )
+};
+export default Characters;
